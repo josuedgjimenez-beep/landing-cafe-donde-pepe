@@ -3,52 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Café Donde Pepe</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Cafetería Donde Pepe</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (íconos) -->
+  <script src="https://kit.fontawesome.com/6f8fba3b99.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Encabezado -->
+  <!-- Header -->
   <header>
-    <h1>☕ Café Donde Pepe</h1>
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <h1 class="logo">☕ Donde Pepe</h1>
+      <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#menu">Menú</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
+    <section id="inicio" class="hero">
+      <h2>El mejor café artesanal de la ciudad</h2>
+      <p>Tradición, sabor y calidez en cada taza.</p>
+      <a href="#menu" class="btn">Ver Menú</a>
+    </section>
   </header>
 
-  <!-- Sección inicio -->
-  <section id="inicio" class="hero">
-    <h2>El mejor café de la ciudad</h2>
-    <p>Disfruta un ambiente acogedor con el sabor único de Donde Pepe.</p>
-    <a href="#menu" class="btn">Ver Menú</a>
+  <!-- Menú -->
+  <section id="menu" class="menu">
+    <h2>Nuestro Menú</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?coffee" alt="Café Espresso">
+        <h3>Espresso</h3>
+        <p>Intenso y aromático, el clásico italiano.</p>
+        <span>$4.000</span>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?cappuccino" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>Espresso con leche cremosa y espuma.</p>
+        <span>$6.000</span>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?latte" alt="Latte">
+        <h3>Latte</h3>
+        <p>Suave combinación de café y leche caliente.</p>
+        <span>$5.500</span>
+      </div>
+    </div>
   </section>
 
-  <!-- Sección menú -->
-  <section id="menu">
-    <h2>Menú</h2>
-    <ul>
-      <li>☕ Café Americano - $5.000</li>
-      <li>🥐 Croissant - $4.000</li>
-      <li>🍰 Cheesecake - $6.500</li>
-    </ul>
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu Nombre" required>
+      <input type="email" placeholder="Tu Correo" required>
+      <textarea placeholder="Tu Mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
   </section>
 
-  <!-- Sección nosotros -->
-  <section id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>En Donde Pepe creemos que el café es más que una bebida, es una experiencia que se disfruta entre amigos.</p>
-  </section>
-
-  <!-- Sección contacto -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>📍 Dirección: Calle 10 #15-20, Barranquilla</p>
-    <p>📞 Tel: 300 123 4567</p>
-    <p>✉️ Email: contacto@dondepepe.com</p>
-  </section>
-
-  <!--
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Cafetería Donde Pepe - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
