@@ -3,54 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafetería Donde Pepe</title>
+  <title>Café Donde Pepe</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome (íconos) -->
-  <script src="https://kit.fontawesome.com/6f8fba3b99.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">☕ Donde Pepe</h1>
-      <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#menu">Menú</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-    <section id="inicio" class="hero">
-      <h2>El mejor café artesanal de la ciudad</h2>
-      <p>Tradición, sabor y calidez en cada taza.</p>
-      <a href="#menu" class="btn">Ver Menú</a>
-    </section>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">☕ Donde Pepe</div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
   </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>El sabor que despierta tus sentidos</h1>
+      <p>Disfruta el mejor café artesanal en un ambiente acogedor</p>
+      <a href="#menu" class="btn">Descubrir Menú</a>
+    </div>
+  </section>
 
   <!-- Menú -->
   <section id="menu" class="menu">
     <h2>Nuestro Menú</h2>
+    <p class="subtitle">Una selección especial preparada con amor</p>
     <div class="menu-grid">
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?coffee" alt="Café Espresso">
-        <h3>Espresso</h3>
-        <p>Intenso y aromático, el clásico italiano.</p>
-        <span>$4.000</span>
+        <img src="https://source.unsplash.com/400x300/?espresso" alt="Café espresso">
+        <div class="card-info">
+          <h3>Espresso</h3>
+          <p>Aromático y fuerte, perfecto para iniciar el día.</p>
+          <span>$5.000</span>
+        </div>
       </div>
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?cappuccino" alt="Cappuccino">
-        <h3>Cappuccino</h3>
-        <p>Espresso con leche cremosa y espuma.</p>
-        <span>$6.000</span>
+        <img src="https://source.unsplash.com/400x300/?latte-art" alt="Café latte">
+        <div class="card-info">
+          <h3>Latte</h3>
+          <p>Una mezcla suave de café y leche cremosa.</p>
+          <span>$7.000</span>
+        </div>
       </div>
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?latte" alt="Latte">
-        <h3>Latte</h3>
-        <p>Suave combinación de café y leche caliente.</p>
-        <span>$5.500</span>
+        <img src="https://source.unsplash.com/400x300/?cappuccino-coffee" alt="Capuccino">
+        <div class="card-info">
+          <h3>Cappuccino</h3>
+          <p>Clásico con espuma perfecta y sabor equilibrado.</p>
+          <span>$8.000</span>
+        </div>
       </div>
     </div>
   </section>
@@ -58,22 +65,32 @@
   <!-- Contacto -->
   <section id="contacto" class="contacto">
     <h2>Contáctanos</h2>
+    <p class="subtitle">Queremos escucharte, escríbenos</p>
     <form>
-      <input type="text" placeholder="Tu Nombre" required>
-      <input type="email" placeholder="Tu Correo" required>
-      <textarea placeholder="Tu Mensaje" required></textarea>
-      <button type="submit" class="btn">Enviar</button>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Escribe tu mensaje"></textarea>
+      <button type="submit">Enviar</button>
     </form>
     <div class="social">
       <a href="#"><i class="fab fa-facebook"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Cafetería Donde Pepe - Todos los derechos reservados.</p>
+    <div class="footer-content">
+      <p>© 2025 Café Donde Pepe | Todos los derechos reservados</p>
+      <ul class="footer-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
   </footer>
+
 </body>
 </html>
+
